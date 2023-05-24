@@ -8,11 +8,6 @@ import { dirname } from 'path'
 import { createRequire } from 'module';
 import { fileURLToPath } from 'url'
 
-const require = createRequire(fileURLToPath(import.meta.url)); 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
-global.__dirname = __dirname
-
 let commonFingerprint = {
     webgl_vendor: "NVIDIA Corporation",
     webgl_renderer: "NVIDIA GeForce GTX 1650/PCIe/SSE2",
